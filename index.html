@@ -28,14 +28,6 @@
         font-family: 'Oswald', sans-serif;
       }
       
-      #hello {
-        padding-left: 0;
-        padding-right: 0;
-        margin-left: auto;
-        margin-right: auto;
-        position: center;
-      }
-
       button {
         display: inline;
         height: 600px;
@@ -45,8 +37,7 @@
   </head>
   <body>
     <audio src="http://k003.kiwi6.com/hotlink/inpjfeubsb/Online.mp3" autoplay loop preload="auto"></audio>
-    <canvas id="canvas" width="400" height="600"></canvas>
-    <div class="hello" id="hello"><button onclick="if (p.x != emptySpace) {p.x += left;}"></button><button onclick="if (p.x != canvas.width - emptySpace) {p.x += right;}"></button></div>
+    <canvas id="canvas" width="400" height="600"></canvas><button onclick="if (p.x != emptySpace) {p.x += left;}"></button><button onclick="if (p.x != canvas.width - emptySpace) {p.x += right;}"></button>
     <script src="sketch.js"></script>
     <h2>Controls:</h2>
     <h3>Left and right arrow keys to change track<br />'r' to restart</h3>
